@@ -1,3 +1,41 @@
+# Práctica 0: Uso de Repositorios  
+
+**Alumno:** Hector Alfredo Vasquez Carpio  
+**Profesor:** Carlos Gallegos  
+**Fecha:** 10/09/2025  
+**Materia:** Prácticas  
+
+---
+
+## Introducción  
+
+El propósito de esta práctica es familiarizarnos con el uso de **Markdown**, **Git** y **GitHub**, así como con la creación de repositorios.  
+
+Estas herramientas son fundamentales en el desarrollo profesional de software ya que permiten documentar, versionar y publicar proyectos de manera ordenada y colaborativa.  
+
+---
+
+## Desarrollo  
+
+### 1. Markdown
+
+**Markdown** es un lenguaje de marcado ligero que permite dar formato a texto de forma sencilla.  
+Su sintaxis se basa en símbolos que representan títulos, listas, enlaces, imágenes y código.  
+
+**Ejemplos de sintaxis en Markdown:**  
+
+- `# Título` → Título grande
+- `**negritas**` → **negritas**  
+- `*cursiva*` → *cursiva*  
+- `[enlace](https://github.com)` → [enlace](https://github.com)  
+- ``` `código` ``` → `código`  
+
+Markdown se utiliza principalmente en **documentación de proyectos** y archivos `README.md` en repositorios.  
+
+#### Ejercicios en clase  
+En clase practicamos diferentes elementos de Markdown. A continuación, se muestra el código que realizamos:  
+
+```md
 <!-- Comentario -->
 
 # Encabezado 1
@@ -17,7 +55,7 @@ a *italica 2010*
 ___
 
 Imagen con tooltip y link
-[![One piece](download.png)](https://www.google.com/search?q=siglas+html&rlz=1C1ONGR_esMX1161MX1161&oq=siglas+ht&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIICAYQABgWGB4yCggHEAAYChgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDM5NjhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8 "One piece")
+[![One piece](download.png)](https://www.google.com/search?q=siglas+html "One piece")
 
 ___
 
@@ -48,14 +86,22 @@ int main()
 
     for(int i = 0; i<123)
 }
+
+---
 ```
 
-___
+### 2. Git y GitHub
 
-Link con tooltip [Texto Hugo](https://www.google.com/search?q=hugo+programacion&rlz=1C1ONGR_esMX1161MX1161&oq=hugo+programacion&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCggCEAAYgAQYogQyBwgDEAAY7wUyBwgEEAAY7wUyBwgFEAAY7wXSAQkxNTE3MmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"Hugo").
+**Git** es un sistema de control de versiones que permite llevar un historial de cambios en los proyectos.  
+**GitHub** es una plataforma en la nube que almacena repositorios Git y facilita la colaboración entre desarrolladores.  
 
-___
+**Comandos esenciales de Git:**
 
-@darthrookie :+1: :smile:
-
-___
+```bash
+git init                # Inicializar un repositorio
+git status              # Ver el estado del repositorio
+git add .               # Añadir archivos al área de preparación
+git commit -m "mensaje" # Confirmar cambios
+git remote add origin URL_REPO  # Enlazar con repositorio remoto
+git push origin main    # Subir cambios a GitHub
+git pull origin main    # Descargar cambios desde GitHub
