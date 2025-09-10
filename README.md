@@ -33,6 +33,7 @@ Su sintaxis se basa en símbolos que representan títulos, listas, enlaces, imá
 Markdown se utiliza principalmente en **documentación de proyectos** y archivos `README.md` en repositorios.  
 
 #### Ejercicios en clase  
+
 En clase practicamos diferentes elementos de Markdown. A continuación, se muestra el código que realizamos:  
 
 ```md
